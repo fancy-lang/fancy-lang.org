@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>The Fancy Programming Language</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="style">
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				Fancy
+				<div id="header-sub">
+					A pure dynamic object-oriented, self-hosted<br/>
+					programming language for the Rubinius VM.
+				</div>
+			</div>
+			<div id="description">
+				Fancy is a new general-purpose programming language inspired by
+				Smalltalk, Ruby and Erlang that runs on the <a href="http://www.rubini.us">Rubinius VM</a>.
+				It has first-class integration support with Ruby and any Ruby libraries supported by Rubinius,
+				including most C-extensions.
+				Fancy is a dynamic, pure object-oriented, class-based programming language with built-in support
+				for futures and actors.
+				The syntax is easy to learn, consistent and is mostly inspired by Ruby and Smalltalk.
+				<hr/>
+			</div>
+			<div id="body">
+				<div id="menu">
+					<a href="https://github.com/bakkdoor/fancy">github repository</a><br/>
+					<a href="https://github.com/fancy-lang">related projects</a><br/>
+					<a href="https://github.com/fancy-lang/infancy">tutorial</a><br/>
+					<a href="http://api.fancy-lang.org">api documentation</a><br/>
+					<a href="https://github.com/bakkdoor/fancy/wiki">wiki</a><br/>
+					<a href="https://github.com/bakkdoor/fancy/issues">issue tracker</a><br/>
+					<a href="http://groups.google.com/group/fancy-lang">mailinglist</a><br/>
+					<a href="http://vimeo.com/channels/fancylang">videos</a><br/>
+					<a href="irc://irc.freenode.net:6667/fancy">irc channel</a><br/>
+					<a href="http://irc.fancy-lang.org/">irc logs</a><br/>
+					<a href="http://rosettacode.org/wiki/Category:Fancy">rosetta code</a><br/>
+				</div>
+				<div id="samples">
+					<div class="title">Code samples</div>
+					<div class="title_small">Hello World</div>
+					<div class="sample">
+						<!--#include virtual="example_hello_world.shtml" -->
+					</div>
+					<div class="title_small">Fibonacci</div>
+					<div class="sample">
+						<!--#include virtual="example_fibonacci.shtml" -->
+					</div>
+					<div class="title_small">Class example</div>
+					<div class="sample">
+						<!--#include virtual="example_person.shtml" -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

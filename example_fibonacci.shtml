@@ -1,0 +1,13 @@
+<span class="k">class</span> <span class="no">Fixnum</span> <span class="p">{</span><br/>
+  &nbsp;&nbsp;<span class="k">def</span> <span class="n">fib</span> <span class="p">{</span><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">match</span> <span class="no">self</span> <span class="p">{</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">case</span> <span class="mi">0</span> <span class="o">-&gt;</span> <span class="mi">0</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">case</span> <span class="mi">1</span> <span class="o">-&gt;</span> <span class="mi">1</span><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">case</span> <span class="n">_</span> <span class="o">-&gt;</span> <span class="no">self</span> <span class="o">-</span> <span class="mi">1</span> <span class="n">fib</span> <span class="o">+</span> <span class="p">(</span><span class="no">self</span> <span class="o">-</span> <span class="mi">2</span> <span class="n">fib</span><span class="p">)</span><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="p">}</span><br/>
+  &nbsp;&nbsp;<span class="p">}</span><br/>
+<span class="p">}</span><br/>
+<br/>
+<span class="mi">15</span> <span class="nf">times:</span> <span class="p">|</span><span class="n">x</span><span class="p">|</span> <span class="p">{</span><br/>
+  &nbsp;&nbsp;<span class="n">x</span> <span class="n">fib</span> <span class="n">println</span><br/>
+<span class="p">}</span><br/>
