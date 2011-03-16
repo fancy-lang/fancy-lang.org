@@ -1,0 +1,33 @@
+#main {
+  margin-top: 1em;
+  margin-left: 7em;
+  margin-right: 7em;
+}
+
+#header {
+  font-size: 60px;
+  text-align: center;
+}
+
+#header-sub {
+  font-size: 18px;
+  text-align: center;
+}
+
+#body {
+  margin-top: 2em;
+  text-align: left;
+}
+
+#menu {
+  float: left;
+  color: #555;
+  font-size: 25px;
+  font-variant: small-caps;
+  margin-right: 2em;
+}
+
+#content {
+  float: none;
+  text-align: left;
+}
