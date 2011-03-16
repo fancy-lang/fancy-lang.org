@@ -1,16 +1,36 @@
 #main {
   margin-top: 1em;
-  margin-left: 7em;
-  margin-right: 7em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#main a {
+  color: #000;
+  text-decoration: underline;
+}
+
+#main a:hover {
+  color: #555;
+  text-decoration: none;
 }
 
 #header {
-  font-size: 60px;
+  font-size: 4em;
   text-align: center;
+  color:#003D6F;
 }
 
 #header-sub {
-  font-size: 18px;
+  font-size: 0.3em;
+  text-align: center;
+  color: #444;
+}
+
+#description {
+  margin-top: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
   text-align: center;
 }
 
@@ -22,7 +42,7 @@
 #menu {
   float: left;
   color: #555;
-  font-size: 25px;
+  font-size: 1.5em;
   font-variant: small-caps;
   margin-right: 2em;
 }
@@ -33,10 +53,11 @@
 }
 
 #menu a:hover {
+  color: #000;
   text-decoration: underline;
 }
 
-#content {
+#samples {
   float: none;
   text-align: left;
 }
