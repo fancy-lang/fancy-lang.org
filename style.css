@@ -31,7 +31,13 @@
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
-  text-align: center;
+  text-align: justify;
+}
+
+#description hr {
+  margin-top: 1.5em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 #body {
@@ -58,6 +64,37 @@
 }
 
 #samples {
-  float: none;
   text-align: left;
+}
+
+pre {
+
+}
+
+.title {
+  font-size: 2em;
+  font-variant: small-caps;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+.title_small {
+  font-size: 1.2em;
+  font-variant: small-caps;
+  margin-left: 25%;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
+}
+
+.sample {
+  margin-left: 25%;
+  background-color: #eee;
+  width: 50%;
+  padding: 1em;
+  font-family: Courier, sans-serif;
+}
+
+.sample pre {
+  float: left;
 }
