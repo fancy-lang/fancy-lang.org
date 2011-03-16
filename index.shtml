@@ -40,7 +40,7 @@
 					<a href="http://rosettacode.org/wiki/Category:Fancy">rosetta code</a><br/>
 				</div>
 				<div id="samples">
-					<div class="title">Code samples</div>
+					<div class="title">code samples</div>
 					<div class="title_small">Hello World</div>
 					<div class="sample">
 						<!--#include virtual="example_hello_world.shtml" -->
