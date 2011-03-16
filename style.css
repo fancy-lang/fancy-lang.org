@@ -27,6 +27,15 @@
   margin-right: 2em;
 }
 
+#menu a {
+  color: #555;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
 #content {
   float: none;
   text-align: left;
