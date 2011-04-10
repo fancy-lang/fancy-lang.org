@@ -1,5 +1,5 @@
 <span class="k">class</span> <span class="no">City</span> <span class="p">{</span><br/>
-  &nbsp;&nbsp;<span class="nf">read_slots:</span> <span class="o">[</span><span class="ss">&#39;name</span><span class="o">]</span><br/>
+  &nbsp;&nbsp;<span class="nf">read_slot:</span> <span class="ss">&#39;name</span><br/>
   &nbsp;&nbsp;<span class="k">def</span> <span class="nf">initialize:</span> <span class="vi">@name</span> <span class="p">{</span><br/>
   &nbsp;&nbsp;<span class="p">}</span><br/>
 <br/>
