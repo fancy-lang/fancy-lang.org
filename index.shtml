@@ -65,6 +65,10 @@
 					<div class="sample">
 						<!--#include virtual="example_person.shtml" -->
 					</div>
+          <div class="title_small">Actors</div>
+					<div class="sample">
+						<!--#include virtual="example_actors.shtml" -->
+					</div>
 				</div>
 			</div>
 		</div>
