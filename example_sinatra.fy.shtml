@@ -21,8 +21,8 @@
 <span class="s">  &quot;&quot;&quot;</span>
 <span class="p">}</span>
 
-<span class="nf">get:</span> <span class="s">&quot;/:page&quot;</span> <span class="nf">do:</span> <span class="p">|</span><span class="n">page</span><span class="p">|</span> <span class="p">{</span>
-  <span class="nf">page:</span> <span class="s">&quot;Fancy web page: #{</span><span class="n">page</span><span class="s">}&quot;</span>
+<span class="nf">get:</span> <span class="s">&quot;/:p&quot;</span> <span class="nf">do:</span> <span class="p">|</span><span class="n">param</span><span class="p">|</span> <span class="p">{</span>
+  <span class="nf">page:</span> <span class="s">&quot;Fancy web page: #{</span><span class="n">param</span><span class="s">}&quot;</span>
 <span class="p">}</span>
 
 <span class="nf">not_found:</span> <span class="p">{</span>
