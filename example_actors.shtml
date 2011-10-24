@@ -1,37 +1,39 @@
-<span class="k">class</span> <span class="no">Ring</span> <span class="p">{</span><br/>
-  &nbsp;&nbsp;<span class="k">class</span> <span class="no">Node</span> <span class="p">{</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">def</span> <span class="nf">initialize:</span> <span class="vi">@next</span> <span class="nf">ring:</span> <span class="vi">@ring</span> <span class="p">{</span> <span class="p">}</span><br/>
-<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">def</span> <span class="nf">count:</span> <span class="n">count</span> <span class="p">{</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nf">if:</span> <span class="vi">@next</span> <span class="nf">then:</span> <span class="p">{</span><br/>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">&quot;.&quot;</span> <span class="n">print</span><br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@next</span> <span class="o">@@</span> <span class="nf">count:</span> <span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">}</span> <span class="nf">else:</span> <span class="p">{</span><br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">&quot;DONE: &quot;</span> <span class="o">++</span> <span class="n">count</span> <span class="n">println</span><br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@ring</span> <span class="nf">done:</span> <span class="no">true</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">}</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">die</span><span class="o">!</span> <span class="c1"># let this actor die to free resources</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="p">}</span><br/>
-  &nbsp;&nbsp;<span class="p">}</span><br/>
-<br/>
-  &nbsp;&nbsp;<span class="nf">read_write_slot:</span> <span class="ss">&#39;done</span><br/>
-  &nbsp;&nbsp;<span class="k">def</span> <span class="nf">initialize:</span> <span class="n">amount</span> <span class="p">{</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="n">node</span> <span class="o">=</span> <span class="no">nil</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="n">amount</span> <span class="nf">times:</span> <span class="p">{</span><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">node</span> <span class="o">=</span> <span class="no">Node</span> <span class="nf">new:</span> <span class="n">node</span> <span class="nf">ring:</span> <span class="no">self</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="p">}</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@start</span> <span class="o">=</span> <span class="n">node</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@done</span> <span class="o">=</span> <span class="no">false</span><br/>
-  &nbsp;&nbsp;<span class="p">}</span><br/>
-<br/>
-  &nbsp;&nbsp;<span class="k">def</span> <span class="n">start</span> <span class="p">{</span><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@start</span> <span class="nf">count:</span> <span class="mi">1</span><br/>
-  &nbsp;&nbsp;<span class="p">}</span><br/>
-<span class="p">}</span><br/>
-<br/>
-<span class="c1"># create ring and run through it</span><br/>
-<span class="n">ring</span> <span class="o">=</span> <span class="no">Ring</span> <span class="nf">new:</span> <span class="mi">4000</span><br/>
-<span class="n">ring</span> <span class="n">start</span><br/>
-<span class="nf">until:</span> <span class="p">{</span> <span class="n">ring</span> <span class="n">done</span> <span class="p">}</span> <span class="nf">do:</span> <span class="p">{</span><br/>
-  &nbsp;&nbsp;<span class="no">Thread</span> <span class="nf">sleep:</span> <span class="mi">0</span><span class="o">.</span><span class="mi">1</span><br/>
-<span class="p">}</span><br/>
+<div class="highlight"><pre><span class="k">class</span> <span class="no">Ring</span> <span class="p">{</span>
+  <span class="k">class</span> <span class="no">Node</span> <span class="p">{</span>
+    <span class="k">def</span> <span class="nf">initialize:</span> <span class="vi">@next</span> <span class="nf">ring:</span> <span class="vi">@ring</span>
+
+    <span class="k">def</span> <span class="nf">count:</span> <span class="n">count</span> <span class="p">{</span>
+      <span class="k">match</span> <span class="vi">@next</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="no">nil</span> <span class="o">-&gt;</span>
+          <span class="s">&quot;DONE: &quot;</span> <span class="o">++</span> <span class="n">count</span> <span class="n">println</span>
+          <span class="vi">@ring</span> <span class="n">finish</span><span class="o">!</span>
+        <span class="k">case</span> <span class="n">_</span> <span class="o">-&gt;</span>
+          <span class="s">&quot;.&quot;</span> <span class="n">print</span>
+          <span class="vi">@next</span> <span class="o">@@</span> <span class="nf">count:</span> <span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+      <span class="p">}</span>
+      <span class="n">die</span><span class="o">!</span> <span class="c1"># let this actor die to free resources</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="k">def</span> <span class="nf">initialize:</span> <span class="n">amount</span> <span class="p">{</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="no">nil</span>
+    <span class="n">amount</span> <span class="nf">times:</span> <span class="p">{</span>
+      <span class="n">node</span> <span class="o">=</span> <span class="no">Node</span> <span class="nf">new:</span> <span class="n">node</span> <span class="nf">ring:</span> <span class="no">self</span>
+    <span class="p">}</span>
+    <span class="vi">@start</span> <span class="o">=</span> <span class="n">node</span>
+  <span class="p">}</span>
+
+  <span class="k">def</span> <span class="nf">start:</span> <span class="vi">@parent</span> <span class="p">{</span>
+    <span class="vi">@start</span> <span class="nf">count:</span> <span class="mi">1</span>
+  <span class="p">}</span>
+
+  <span class="k">def</span> <span class="n">finish</span><span class="o">!</span> <span class="p">{</span>
+    <span class="vi">@parent</span> <span class="n">run</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># create ring and run through it</span>
+<span class="n">ring</span> <span class="o">=</span> <span class="no">Ring</span> <span class="nf">new:</span> <span class="mi">4000</span>
+<span class="n">ring</span> <span class="nf">start:</span> <span class="o">$</span> <span class="no">Thread</span> <span class="n">current</span>
+<span class="no">Thread</span> <span class="n">stop</span> <span class="c1"># wait until finished</span>
+</pre></div>

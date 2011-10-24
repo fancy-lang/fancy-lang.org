@@ -63,7 +63,11 @@
 					</div>
 					<div class="title_small">Class example</div>
 					<div class="sample">
-						<!--#include virtual="example_person.shtml" -->
+						<!--#include virtual="example_greeter.shtml" -->
+					</div>
+          <div class="title_small">Write web apps with <a href="https://github.com/rkh/sinatra.fy">Sinatra.fy</a></div>
+					<div class="sample">
+						<!--#include virtual="example_sinatra.fy.shtml" -->
 					</div>
           <div class="title_small">Actors</div>
 					<div class="sample">

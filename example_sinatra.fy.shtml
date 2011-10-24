@@ -1,0 +1,31 @@
+<div class="highlight"><pre><span class="nf">require:</span> <span class="s">&quot;sinatra.fy&quot;</span>
+
+<span class="nf">configure:</span> <span class="ss">&#39;production</span> <span class="nf">with:</span> <span class="p">{</span>
+  <span class="nf">disable:</span> <span class="ss">&#39;show_errors</span>
+  <span class="nf">enable:</span> <span class="ss">&#39;logging</span>
+<span class="p">}</span>
+
+<span class="nf">set:</span> <span class="ss">&#39;port</span> <span class="nf">to:</span> <span class="mi">3000</span>
+
+<span class="nf">before:</span> <span class="p">{</span>
+  <span class="s">&quot;incoming request: #{</span><span class="n">request inspect</span><span class="s">}&quot;</span> <span class="n">println</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">page:</span> <span class="n">text</span> <span class="p">{</span>
+  <span class="s">&quot;&quot;&quot;</span>
+<span class="s">  &lt;html&gt;</span>
+<span class="s">    &lt;body&gt;</span>
+<span class="s">      &lt;h1&gt;#{</span><span class="n">text</span><span class="s">}&lt;/h1&gt;</span>
+<span class="s">    &lt;/body&gt;</span>
+<span class="s">  &lt;/html&gt;</span>
+<span class="s">  &quot;&quot;&quot;</span>
+<span class="p">}</span>
+
+<span class="nf">get:</span> <span class="s">&quot;/:page&quot;</span> <span class="nf">do:</span> <span class="p">|</span><span class="n">page</span><span class="p">|</span> <span class="p">{</span>
+  <span class="nf">page:</span> <span class="s">&quot;Fancy web page: #{</span><span class="n">page</span><span class="s">}&quot;</span>
+<span class="p">}</span>
+
+<span class="nf">not_found:</span> <span class="p">{</span>
+  <span class="nf">page:</span> <span class="s">&quot;Invalid request URL.&quot;</span>
+<span class="p">}</span>
+</pre></div>

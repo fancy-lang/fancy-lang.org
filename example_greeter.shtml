@@ -1,0 +1,10 @@
+<div class="highlight"><pre><span class="k">class</span> <span class="no">Greeter</span> <span class="p">{</span>
+  <span class="k">def</span> <span class="nf">initialize:</span> <span class="vi">@name</span>
+  <span class="k">def</span> <span class="n">greet</span> <span class="p">{</span>
+    <span class="s">&quot;Hello, #{</span><span class="vi">@name</span><span class="s">}&quot;</span> <span class="n">println</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="no">Greeter</span> <span class="nf">new:</span> <span class="s">&quot;World!&quot;</span>
+<span class="n">g</span> <span class="n">greet</span> <span class="c1"># =&gt; &quot;Hello, World!&quot;</span>
+</pre></div>
