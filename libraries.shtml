@@ -51,28 +51,40 @@
 					<a href="http://irc.fancy-lang.org/">irc logs</a><br/>
 					<a href="http://rosettacode.org/wiki/Category:Fancy">rosetta code</a><br/>
 				</div>
-				<div id="samples">
-					<div class="title">code samples</div>
-					<div class="title_small">Hello World</div>
-					<div class="sample">
-						<!--#include virtual="example_hello_world.shtml" -->
-					</div>
-					<div class="title_small">Fibonacci</div>
-					<div class="sample">
-						<!--#include virtual="example_fibonacci.shtml" -->
-					</div>
-					<div class="title_small">Class example</div>
-					<div class="sample">
-						<!--#include virtual="example_greeter.shtml" -->
-					</div>
-          <div class="title_small">Write web apps with <a href="https://github.com/rkh/sinatra.fy">Sinatra.fy</a></div>
-					<div class="sample">
-						<!--#include virtual="example_sinatra.fy.shtml" -->
-					</div>
-          <div class="title_small">Actors</div>
-					<div class="sample">
-						<!--#include virtual="example_actors.shtml" -->
-					</div>
+				<div id="libraries">
+					<div class="title">libraries & utilities</div>
+					<div class="libraries_list">
+            <table>
+              <tr>
+                <td><a href="https://github.com/nuclearsandwich/fancy-vim">fancy-vim</a></td>
+                <td>Vim mode for Fancy</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/rkh/sinatra.fy">sinatra.fy</a></td>
+                <td>Sinatra Web Programming</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/redis.fy">redis.fy</a></td>
+                <td>Redis Client Library</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/stormify">stormify</a></td>
+                <td>Fancy DSL for Twitter's Storm</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/fyzmq">fyzmq</a></td>
+                <td>ZMQ for Fancy</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/fancy_irc">fancy_irc</a></td>
+                <td>IRC Client Library</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/fancy-lang/mongo.fy">mongo.fy</a></td>
+                <td>Experimental MongoDB Drive</td>
+              </tr>
+            </table>
+         </div>
 				</div>
 			</div>
 		</div>
