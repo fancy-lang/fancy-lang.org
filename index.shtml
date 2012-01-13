@@ -27,7 +27,7 @@
 			</div>
 			<div id="description">
 				Fancy is a new general-purpose programming language inspired by
-				Smalltalk, Ruby and Erlang that runs on the <a href="http://www.rubini.us">Rubinius VM</a>.
+				Smalltalk, Ruby, Io and Erlang that runs on the <a href="http://www.rubini.us">Rubinius VM</a>.
 				It has first-class integration support with Ruby and any Ruby libraries supported by Rubinius,
 				including most C-extensions.
 				Fancy is a dynamic, pure object-oriented, class-based programming language with built-in support
