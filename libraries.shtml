@@ -60,12 +60,28 @@
                 <td>Vim mode for Fancy</td>
               </tr>
               <tr>
+                <td><a href="https://github.com/fancy-lang/fancy-tmbundle">fancy.tmbundle</a></td>
+                <td>Textmate bundle for the Fancy Programming Language</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/fancy-snippets">fancy-snippets</a></td>
+                <td>Code snippets for Fancy's emacs-mode using yasnippet</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/fancy-lang/fake">fake</a></td>
+                <td>Fancy automation & build tool</td>
+              </tr>
+              <tr>
                 <td><a href="https://github.com/rkh/sinatra.fy">sinatra.fy</a></td>
                 <td>Sinatra Web Programming</td>
               </tr>
               <tr>
                 <td><a href="https://github.com/bakkdoor/redis.fy">redis.fy</a></td>
                 <td>Redis Client Library</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/msgpack.fy">msgpack.fy</a></td>
+                <td>MessagePack serialization/rpc library</td>
               </tr>
               <tr>
                 <td><a href="https://github.com/bakkdoor/stormify">stormify</a></td>
@@ -78,10 +94,6 @@
               <tr>
                 <td><a href="https://github.com/bakkdoor/fancy_irc">fancy_irc</a></td>
                 <td>IRC Client Library</td>
-              </tr>
-              <tr>
-                <td><a href="https://github.com/fancy-lang/mongo.fy">mongo.fy</a></td>
-                <td>Experimental MongoDB Drive</td>
               </tr>
             </table>
          </div>
