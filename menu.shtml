@@ -1,0 +1,15 @@
+        <div id="menu">
+          <a href="https://github.com/bakkdoor/fancy">github repository</a><br/>
+          <a href="http://www.fancy-lang.org/libraries.shtml">libraries</a><br/>
+          <a href="https://github.com/fancy-lang">related projects</a><br/>
+          <a href="https://github.com/fancy-lang/infancy">tutorial</a><br/>
+          <a href="http://www.youtube.com/playlist?list=PLF576B1AD1F5DE1FB">videos / screencasts</a><br/>
+          <a href="http://api.fancy-lang.org">api documentation</a><br/>
+          <a href="https://github.com/bakkdoor/fancy/tree/master/lib">standard library</a><br/>
+          <a href="https://github.com/bakkdoor/fancy/wiki">wiki</a><br/>
+          <a href="https://github.com/bakkdoor/fancy/issues">issue tracker</a><br/>
+          <a href="http://groups.google.com/group/fancy-lang">mailing list</a><br/>
+          <a href="irc://irc.freenode.net:6667/fancy">irc channel</a><br/>
+          <a href="http://irc.fancy-lang.org/">irc logs</a><br/>
+          <a href="http://rosettacode.org/wiki/Category:Fancy">rosetta code</a><br/>
+        </div>
