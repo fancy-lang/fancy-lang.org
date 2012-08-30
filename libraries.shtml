@@ -43,6 +43,10 @@
                 <td><a href="https://github.com/bakkdoor/fancy_irc">fancy_irc</a></td>
                 <td>IRC Client Library</td>
               </tr>
+              <tr>
+                <td><a href="https://github.com/bakkdoor/ripple.fy">ripple.fy</a></td>
+                <td>Rich modeling layer for Riak, the distributed key-value database</td>
+              </tr>
             </table>
          </div>
 				</div>
