@@ -32,8 +32,8 @@
                 <td>MessagePack serialization/rpc library</td>
               </tr>
               <tr>
-                <td><a href="https://github.com/bakkdoor/stormify">stormify</a></td>
-                <td>Fancy DSL for Twitter's Storm</td>
+                <td><a href="https://github.com/bakkdoor/hurricane">hurricane</a></td>
+                <td>Fancy DSL for Twitter's Storm realtime computation system</td>
               </tr>
               <tr>
                 <td><a href="https://github.com/bakkdoor/fyzmq">fyzmq</a></td>
